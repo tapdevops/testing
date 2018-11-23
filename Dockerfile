@@ -12,6 +12,10 @@ RUN npm install
 # If you are building your code for production
 # RUN npm install --only=production
 
+#daemon for cron jobs
+RUN echo 'echo will install crond...' >> /usr/src/start.sh -C
+RUN echo 'crond' >> /usr/src/start.sh -C
+
 # Bundle app source
 COPY . .
 
