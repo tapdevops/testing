@@ -19,5 +19,5 @@ RUN echo 'crond' >> /usr/src/start.sh -C
 # Bundle app source
 COPY . .
 
-EXPOSE 8001
+EXPOSE 8080
 CMD [ "npm", "start" ]
